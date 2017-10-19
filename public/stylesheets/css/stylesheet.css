@@ -1,0 +1,21 @@
+#slide1 {
+  background-image: url('../../../public/img/parallax test/slide1.jpg');
+  background-size: cover;
+}
+
+#slide2 {
+  background-image: url('../../../public/img/parallax test/slide2.jpg');
+  background-size: cover;
+}
+
+#slide3 {
+  background-image: url('../../../public/img/parallax test/slide3.jpg');
+  background-size: cover;
+}
+
+.slide {
+  width: 900px;
+  height: 600px;
+  margin: auto 0;
+  border: 1px solid black;
+}
