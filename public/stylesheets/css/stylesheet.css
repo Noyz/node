@@ -1,21 +1,205 @@
-#slide1 {
-  background-image: url('../../../public/img/parallax test/slide1.jpg');
-  background-size: cover;
+body {
+  font-family: 'Nunito', sans-serif;
+  height: 100%;
+  background-color: #2f3238;
 }
 
-#slide2 {
-  background-image: url('../../../public/img/parallax test/slide2.jpg');
-  background-size: cover;
+ul {
+  list-style: none;
 }
 
-#slide3 {
-  background-image: url('../../../public/img/parallax test/slide3.jpg');
-  background-size: cover;
+a {
+  text-decoration: none !important;
+  color: white;
 }
 
-.slide {
-  width: 900px;
-  height: 600px;
-  margin: auto 0;
-  border: 1px solid black;
+a:hover,
+a:visited {
+  color: white;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  opacity: .5;
+}
+
+.black:after {
+  background-color: #2f3238;
+}
+
+#home-slider {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  padding-top: 100vh;
+  background: url('../../../public/img/slide1.jpg') center 0 no-repeat fixed;
+}
+
+#home-slider .slide-inside {
+  margin: 0 auto;
+  color: white;
+}
+
+#home-slider .slidebar {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #2f3238;
+}
+
+#home-slider .drop-down {
+  position: relative;
+  float: right;
+  width: 50px;
+  height: 50px;
+}
+
+#home-slider .drop-down:hover {
+  background-color: #3c3;
+}
+
+#home-slider .arrow-down {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  display: inline-block;
+  padding: 6px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border: solid white;
+  border-width: 0 3px 3px 0;
+}
+
+#home-slider h1 {
+  position: absolute;
+  top: 40vh;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+header {
+  font-size: 22px;
+  padding: 20px 10px;
+  text-transform: uppercase;
+  background-color: #26292e;
+}
+
+header .header-navbar {
+  float: right;
+}
+
+header .header-navbar li {
+  float: left;
+  padding-left: 50px;
+  text-align: right;
+  color: white;
+}
+
+header .header-navbar li a:hover {
+  color: #3c3;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  padding: 0 10px;
+}
+
+#mywork {
+  padding-top: 150px;
+  color: white;
+}
+
+#mywork .bloc-title {
+  width: 100%;
+  margin-left: 0 !important;
+  text-align: center;
+}
+
+#mywork .bloc-title h2 {
+  font-size: 42px;
+  padding-bottom: 10px;
+}
+
+#mywork .bloc-title p {
+  padding-bottom: 40px;
+}
+
+#mywork .bloc-title .linkToGithub {
+  color: #3c3;
+}
+
+#mywork .bloc-nav .mywork-type {
+  font-size: 24px;
+  margin-left: 25px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#mywork .bloc-nav .mywork-nav-item {
+  padding-bottom: 10px;
+}
+
+#mywork .bloc-projects .mywork-projects-item {
+  position: relative;
+  display: table-cell;
+  float: left;
+  width: 25%;
+  height: 200px;
+  margin: 10px 30px;
+  vertical-align: middle;
+  border: 1px solid white;
+}
+
+#mywork .bloc-projects .mywork-projects-item a {
+  width: 100%;
+  height: 100%;
+}
+
+#mywork .bloc-projects .clients-img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  min-height: 50px;
+}
+
+.overlay-img {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  filter: alpha(opacity=100);
+}
+
+.overlay-img:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  opacity: .5;
+}
+
+.green:after {
+  background-color: #3c3;
 }
